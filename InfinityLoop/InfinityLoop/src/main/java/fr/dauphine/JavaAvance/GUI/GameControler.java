@@ -48,12 +48,12 @@ public class GameControler {
     private boolean canChange = true;
 
     private static final HashMap<PieceType, String> MAPIMAGE = new HashMap<>(){{
-        put(VOID,".\\out\\ressource\\background.png");
-        put(ONECONN, ".\\out\\ressource\\1.png");
-        put(BAR, ".\\out\\ressource\\5.png");
-        put(TTYPE, ".\\out\\ressource\\7.png");
-        put(FOURCONN, ".\\out\\ressource\\11.png");
-        put(LTYPE, ".\\out\\ressource\\12.png");
+        put(VOID,"./out/ressource/background.png");
+        put(ONECONN, "./out/ressource/1.png");
+        put(BAR, "./out/ressource/5.png");
+        put(TTYPE, "./out/ressource/7.png");
+        put(FOURCONN, "./out/ressource/11.png");
+        put(LTYPE, "./out/ressource/12.png");
     }};
 
     @FXML
@@ -125,7 +125,7 @@ public class GameControler {
 
     private void saveGridOnFile(){
         final FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(".\\out"));
+        fileChooser.setInitialDirectory(new File("./out"));
         File file = fileChooser.showSaveDialog(MainGUI.getWindow());
         try {
             FileWriter myWriter = new FileWriter(file);

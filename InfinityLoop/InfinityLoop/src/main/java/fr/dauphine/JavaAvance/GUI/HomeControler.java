@@ -71,7 +71,7 @@ public class HomeControler {
 
     private void open() throws IOException{
         final FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(".\\out"));
+        fileChooser.setInitialDirectory(new File("./out"));
         File file = fileChooser.showOpenDialog(MainGUI.getWindow());
         Grid grid = Generator.generateLevelFromFiles(file);
         FXMLLoader loader = new FXMLLoader(GUI.class.getResource("Game.fxml"));

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(232,209,218);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.fr.dauphine.JavaAvance.GUI.HomeControler">
+    <Button fx:id="openButton" layoutX="380.0" layoutY="179.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="114.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-border-color: black;" text="Open" />
+    <Button fx:id="generateButton" layoutX="107.0" layoutY="277.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="114.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-border-color: black;" text="Generate" />
+   <Label layoutX="90.0" layoutY="53.0" text="Number of row :" />
+   <Spinner fx:id="nbColumnSpinner" editable="true" layoutX="90.0" layoutY="166.0" />
+   <Label layoutX="90.0" layoutY="139.0" text="Number of column : " />
+   <Spinner fx:id="nbRowSpinner" editable="true" layoutX="90.0" layoutY="79.0" />
+   <Slider fx:id="cpSlider" blockIncrement="0.05" layoutX="94.0" layoutY="246.0" max="1.0" value="0.5" />
+   <Label fx:id="cpLabel" layoutX="93.0" layoutY="221.0" text="Connector percent : " />
+
+</AnchorPane>

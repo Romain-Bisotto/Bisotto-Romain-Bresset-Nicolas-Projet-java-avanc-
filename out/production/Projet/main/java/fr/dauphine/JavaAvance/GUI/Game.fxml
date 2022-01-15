@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="background" prefHeight="750.0" prefWidth="900.0" style="-fx-background-color: rgb(232,209,218);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.fr.dauphine.JavaAvance.GUI.GameControler">
+   <children>
+      <GridPane fx:id="plateauGP" layoutX="70.0" layoutY="35.0" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: rgb(232,209,218); -fx-background-radius: 50px">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+        </columnConstraints>
+      </GridPane>
+      <Button fx:id="solveButton" layoutX="617.0" layoutY="196.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="202.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-border-color: black;" text="Solve" />
+      <Label fx:id="labelVictoire" alignment="CENTER" layoutX="617.0" layoutY="86.0" prefHeight="64.0" prefWidth="202.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="VICTOIRE" textFill="#03aa1c" visible="false" />
+       <Label fx:id="labelImpossible" alignment="CENTER" layoutX="617.0" layoutY="86.0" prefHeight="64.0" prefWidth="202.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="IMPOSSIBLE" textFill="#e80000" visible="false" />
+       <Button fx:id="saveButton" layoutX="617.0" layoutY="529.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="202.0" style="-fx-background-radius: 35px; -fx-border-radius: 35px; -fx-border-color: black;" text="Save" />
+   </children>
+</AnchorPane>
